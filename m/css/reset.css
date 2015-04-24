@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Mobile Reset */
+html, body
+{
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+body{ 
+ word-wrap: break-word;
+ -webkit-text-size-adjust: none;
+}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+
+h1, h2, h3, h4, h5, h6,p{ font-weight: normal; margin:0; padding:0; }
+
+p img { float: left; margin: 0 ; padding: 0; }
+/*p img { float: left; margin: 0; padding: 0; }*/
+
+img { border:0; max-width:100%; margin:0; padding:0 }
+
+table { width:auto; border-collapse: collapse;border-spacing: 0; }

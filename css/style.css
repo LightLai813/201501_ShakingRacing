@@ -1,0 +1,317 @@
+﻿@charset "utf-8";
+@import url("reset.css");
+@import url("color.css");
+
+body{	
+	font-family:"微軟正黑體", "Microsoft JhengHei","Meiryo", "新細明體", "PMingLiU", "MingLiU", serif;
+	-webkit-text-size-adjust:none;
+	width:100%;
+	height:100%;
+	background:#1ca296;
+}
+
+body,html{
+	width:100%;
+	height:100%; 
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;}
+
+/*----css 清除浮動技巧------*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*-------css 清除浮動技巧----*/
+.floatR{float:right;}	
+.floatL{float:left;}
+.clean{clear:both;}	
+.close{display:none;}	
+.open{display:block;}
+
+.wrapper{
+	position:relative;
+	width:1024px;
+	height:768px;
+	margin:0 auto;}
+	
+.bg1{background:url(../images/bg1.gif) no-repeat left top;}	
+.bg2{background:url(../images/bg2.gif) no-repeat left top;}	
+.bg3{background:url(../images/bg3.gif) no-repeat left top;}	
+
+a.btn_start{
+	display:block;
+	position:absolute;
+	bottom:120px;
+	left:50%;
+	width:252px;
+	height:76px;
+	margin:0 0 0 -126px;
+	background:url(../images/btn_start.png) no-repeat left top;}
+
+a:hover.btn_start{background:url(../images/btn_start.png) no-repeat left bottom;}
+
+.step1,.step2{
+	position:absolute;
+	width:1024px;
+	height:768px;
+	left:50%;
+	margin:0 0 0 -512px;
+	z-index:10;
+	}	
+	
+.mask_bg{ 
+	background:#000; 
+	opacity:0.8; 
+	width:1024px; 
+	height:768px;
+	position:absolute; 
+	top:0;}
+	
+.connent_box{
+	width:488px;
+	height:303px;
+	position:absolute;
+	margin:0 0 0 -244px;
+	left:50%;
+	top:30px;
+	background:#fff;
+	-webkit-border-radius: 20px;
+    border-radius: 20px;
+	overflow:hidden;}	
+	
+h1{
+	width:100%;
+	background-color:#07cdb8;
+	color:#fff;
+	font-weight:bolder;
+	font-size:34px;
+	letter-spacing:1px;
+	font-family: 'Open Sans', sans-serif;	
+	padding:11px 0 11px 30px;}	
+	
+.font1{
+	font-size:22px;
+	color:#727272;
+	width:195px;
+	position:absolute;
+	left:30px;
+	line-height:1.3em;
+	top:80px;
+	font-weight:bold;
+	letter-spacing:1px;}	
+	
+.tip{
+	position:absolute;
+	bottom:30px;
+	left:30px;
+	width:200px;
+	height:36px;
+	background-color:#ff900d;
+	color:#fff;
+	line-height:36px;
+	text-align:center;
+	font-weight:bold;
+	-webkit-border-radius: 30px;
+    border-radius: 30px;}
+	
+.qrcode{
+	width:211px;
+	height:211px;
+	position:absolute;
+	right:25px;
+	top:70px;
+    overflow:hidden;
+    cursor:pointer;
+}		
+	
+.run_people,.ready_people{
+	width:965px;
+	bottom:0;
+	position:absolute;
+	left:50%;
+	margin:0 0 0 -482px;
+	z-index:20;}	
+	
+.p1{position:absolute;left:0px;bottom:0; cursor:pointer;}
+.p2{position:absolute;left:90px;bottom:0; cursor:pointer;}
+.p3{position:absolute;left:176px;bottom:0; cursor:pointer;}
+.p4{position:absolute;left:264px;bottom:0; cursor:pointer;}
+.p5{position:absolute;left:352px;bottom:0; cursor:pointer;}
+.p6{position:absolute;left:440px;bottom:0; cursor:pointer;}
+.p7{position:absolute;left:522px;bottom:0; cursor:pointer;}
+.p8{position:absolute;left:610px;bottom:0; cursor:pointer;}
+.p9{position:absolute;left:695px;bottom:0; cursor:pointer;}
+.p10{position:absolute;left:780px;bottom:0; cursor:pointer;}
+.p11{position:absolute;left:870px;bottom:0; cursor:pointer;}
+		
+.name{
+	width:70px;
+	height:25px;
+	margin:0 0 10px 14px;
+	color:#fff;
+	text-align:center;
+	line-height:25px;
+	font-weight:bold;
+	-webkit-border-radius: 30px;
+    border-radius: 30px;}
+	
+.ready_pic{width:147px;}
+.ready_pic img{ width:60%;}
+
+.run_pic { width:100px; height:150px; background-size: 90px; background-repeat:no-repeat;}
+
+.role1{background-image:url(/images/run1.png); }
+.role2{background-image:url(/images/run2.png);}
+.role3{background-image:url(/images/run3.png);}
+.role4{background-image:url(/images/run4.png);}
+.role5{background-image:url(/images/run5.png);}
+.role6{background-image:url(/images/run6.png);}
+.role7{background-image:url(/images/run7.png);}
+.role8{background-image:url(/images/run8.png);}
+.role9{background-image:url(/images/run9.png);}
+.role10{background-image:url(/images/run10.png);}
+.role11{background-image:url(/images/run11.png);}
+
+.leftfoot{background-position:top left;}
+.rightfoot{background-position:bottom right;}
+
+
+	
+	
+
+.final_second{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-170px 0 0 -243px;
+	width:486px;
+	font-size:277px;
+	text-align:center;
+	font-weight:bolder;
+	color:#fcff01;	
+	font-family: 'Open Sans', sans-serif;	}
+	
+.team{
+	font-weight:bolder;
+	color:#fff;	
+	font-family: 'Open Sans', sans-serif;
+	position:absolute;
+	left:50%;
+	top:10px;
+	width:309px;
+	font-size:40px;
+	text-align:center;
+	margin:0 0 0 -154px;}
+	
+.plat{
+	width:480px;
+	position:absolute;
+	left:50%;
+	bottom:135px;
+	margin:0 0 0 -240px;
+	height:156px;
+	background:url(../images/plat.png) no-repeat left top;}		
+	
+.no1{
+    position:absolute;
+	left:432px;
+	bottom:289px;
+	width:160px;
+}
+	
+.no2{
+    position:absolute;
+	left:269px;
+	bottom:240px;
+	width:160px;
+}
+	
+.no3{
+	position:absolute;
+	left:589px;
+	bottom:240px;
+	width:160px;}				
+	
+.awardname{
+	width:86px;
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	-webkit-border-radius: 30px;
+    border-radius: 30px;
+	margin:0 0 20px 35px;}	
+	
+.bomb1{
+	position:absolute;
+	left:-20px;
+	bottom:204px;
+    display:none;
+}
+
+.bomb2{
+	position:absolute;
+	right:-30px;
+	bottom:190px;
+    display:none;
+}
+	
+/* --------------首頁loading-----------------*/
+.mask_loading{
+	width:100%;
+	height:100%;
+	background:#fff;
+	opacity:1;
+	position:absolute;
+	top:0;
+	z-index:50;}
+
+h4{
+	margin:20px 0 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	color:#78c1c0;}
+
+#container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width:150px;
+  text-align:center;
+  margin:-100px 0 0 -75px;
+  z-index:60;  
+}
+
+#container span{
+  display: block;
+  background: #78c1c0;
+  width: 150px;
+  height: 5px;
+  margin-top: 5px;
+  -webkit-animation: load 2s infinite;
+  animation: load 2s infinite;
+  border-radius: 5px;
+}
+
+#container span:nth-child(2){animation-delay: 100ms;}
+#container span:nth-child(3){animation-delay: 200ms;}
+
+@-webkit-keyframes load{
+  50%{
+    width: 5px;
+    margin-right: 95px;
+    opacity: .1;
+  }
+}
+
+/* --------------首頁loadingr END-----------------*/	
